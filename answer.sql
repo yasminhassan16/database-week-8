@@ -1,0 +1,53 @@
+
+-- ============================================
+-- MySQL Database Backup Assignment
+-- ============================================
+
+-- QUESTION 1: Creating a Complete Database Backup
+--
+-- Command:
+-- mysqldump -u root -p sales > sales_backup.sql
+--
+-- Explanation:
+-- mysqldump is a MySQL command-line utility used
+-- to create database backups.
+--
+-- -u root: Specifies root as the MySQL username.
+-- -p: Prompts the user to enter the MySQL password.
+-- sales: Specifies the database to back up.
+-- > sales_backup.sql: Saves the backup to a file
+-- named sales_backup.sql.
+--
+-- This command creates a complete logical backup
+-- of the sales database, including its structure
+-- and data.
+--
+-- Importance of regular database backups:
+-- Regular backups protect important information
+-- against accidental deletion, hardware failure,
+-- software errors, and cyberattacks. They also
+-- make database recovery possible when problems
+-- occur.
+
+
+-- QUESTION 2: Backing Up All Databases
+--
+-- Command:
+-- mysqldump -u root -p --all-databases > all_databases_backup.sql
+--
+-- Explanation:
+-- mysqldump: MySQL database backup utility.
+-- -u root: Specifies root as the MySQL username.
+-- -p: Prompts for the MySQL password.
+-- --all-databases: Exports every database on the
+-- MySQL server.
+-- > all_databases_backup.sql: Saves all database
+-- backups into one SQL file.
+--
+-- Importance of backing up all databases before
+-- server migration:
+-- Backing up all databases ensures that no
+-- important information is lost during migration.
+-- It allows the databases to be restored on the
+-- new server and helps maintain business
+-- continuity, data integrity, and consistency.
